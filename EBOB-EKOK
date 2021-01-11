@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class ebobekok {
+
+   public static void main(String[] args) {
+      Scanner scan = new Scanner(System.in);
+      int sayi1, sayi2, ebob = 1, ekok;
+
+      System.out.print("Lütfen sayıları giriniz : ");
+      sayi1 = scan.nextInt();
+      sayi2 = scan.nextInt();
+      int min = (sayi1 < sayi2) ? sayi1 : sayi2;
+
+      for (int i = min; i > 0; i--) {
+         if ((sayi1 % i == 0 && (sayi2 % i == 0))) {
+            ebob = i;
+
+         }
+      }
+      scan.close();
+
+      ekok = (sayi1 * sayi2) / ebob;
+
+      System.out.println(sayi1 + " ve " + sayi2 + " Sayıların ekoku : " + ekok);
+      System.out.println(sayi1 + " ve " + sayi2 + " Sayıların ebobu : " + ebob);
+
+   }
+
+}
