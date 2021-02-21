@@ -9,7 +9,7 @@ public class atm {
          
         int bakiye = 1000;
          
-        System.out.println("Bakiyeniz = " + bakiye);
+  
         System.out.println("\n****İSLEMLER****\n");
         System.out.println("1. Para Çekme");
         System.out.println("2. Para Yatırma");
